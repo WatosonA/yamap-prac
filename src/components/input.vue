@@ -141,7 +141,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       products: {
         options: [
@@ -169,10 +169,10 @@ export default {
     }
   },
   methods: {
-    doSubmit() {
+    doSubmit () {
       this.$validator.validate().then(result => {
         if (result) {
-          this.$router.push({ name: 'confirm', params: this.form });
+          this.$router.push({ name: 'confirm', params: this.form })
         }
       })
     }

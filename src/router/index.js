@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import vue_input from '@/components/input'
-import vue_confirm from '@/components/confirm'
-import vue_complete from '@/components/complete'
+import CmpInput from '@/components/input'
+import CmpConfirm from '@/components/confirm'
+import CmpComplete from '@/components/complete'
 
 Vue.use(Router)
 
@@ -11,17 +11,17 @@ export default new Router({
     {
       path: '/',
       name: 'input',
-      component: vue_input
+      component: CmpInput
     },
     {
       path: '/confirm',
       name: 'confirm',
-      component: vue_confirm
+      component: CmpConfirm
     },
     {
       path: '/complete',
       name: 'complete',
-      component: vue_complete
+      component: CmpComplete
     }
   ],
   scrollBehavior (to, from, savedPosition) {
